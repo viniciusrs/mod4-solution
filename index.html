@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+<head>
+	<title>Chinese Food</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/general.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="header">
+					<h1>Chinese Food</h1>
+					<span class="glyphicon glyphicon-fire"></span>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<ui-view></ui-view>
+
+	<!-- lib -->
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/bootstrap.min.js"></script>
+	<script src="lib/angular.min.js"></script>
+	<script src="lib/angular-ui-router.min.js"></script>
+
+	<!-- Modules -->
+	<script src="src/modules/menuApp-module.js"></script>
+	<script src="src/modules/data-module.js"></script>
+
+	<!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- Controllers -->
+    <script src="src/controllers/categories-controller.js"></script>
+
+    <!-- Components -->
+
+    <script src="src/components/scripts/categories-component.js"></script>
+
+    <!-- Services -->
+    <script src="src/services/menuData-service.js"></script>
+
+</body>
+</html>
