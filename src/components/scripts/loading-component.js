@@ -11,6 +11,7 @@ loadingController.$inject = ['$rootScope'];
 function loadingController($rootScope){
 	var $ctrl = this;
 	var cancellers = [];
+	
 
 	$ctrl.$onInit = function () {
     var cancel = $rootScope.$on('$stateChangeStart',
