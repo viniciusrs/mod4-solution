@@ -1,4 +1,4 @@
 <div> categories component <div>
 <div ng-repeat="item in $ctrl.items">
-<a>{{item.name}}</a>
+	<a ui-sref="menuItems({itemId: item.short_name})">{{item.name}}</a>
 </div>

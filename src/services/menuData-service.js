@@ -21,7 +21,7 @@ function MenuDataService(ApiBasePath, $http){
 	service.GetItemsForCategory = function(category){
 		var response = $http({
 			method: "GET",
-			url: (ApiBasePath + "menu_items.json?category=" + category)
+			url: (ApiBasePath + "/menu_items.json?category=" + category)
 		});
 
 	return	response;
