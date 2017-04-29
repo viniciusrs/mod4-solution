@@ -9,6 +9,9 @@ body .header h1 {
   text-align: center;
   text-transform: uppercase; }
 
+body .header h1:hover {
+  cursor: pointer; }
+
 body .header span {
   display: block;
   color: red;
@@ -31,7 +34,81 @@ body .home .enter span {
   font-size: 80px; }
 
 body .home .enter span:hover {
-  color: #cccccc; }
+  color: #cccccc;
+  cursor: pointer; }
+
+body .categories {
+  position: relative; }
+
+body .categories h1 {
+  text-align: center;
+  margin-bottom: 50px; }
+
+body .categories h1 span {
+  font-size: 25px; }
+
+body .categoriesList p {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.3s; }
+
+body .categoriesList p span {
+  font-size: 10px; }
+
+body .categoriesList p:hover {
+  background-color: #cccccc;
+  cursor: pointer; }
+
+body .menuItems {
+  position: relative; }
+
+body .menuItems h1 {
+  text-align: center;
+  margin-bottom: 50px; }
+
+body .menuItems h1 span {
+  font-size: 25px; }
+
+body .menuItemList {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  height: 150px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden; }
+
+body .menuItemList p {
+  font-size: 12px;
+  padding: 10px; }
+
+body .menuItemList p span {
+  font-weight: bold; }
+
+body .menuItemList p:nth-child(2) {
+  padding-top: 20px; }
+
+body .menuItemList img {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 50px;
+  height: 50px; }
+
+body .buttonBack {
+  text-align: center;
+  margin: 50px auto 10px auto;
+  padding: 2px 10px 2px 10px;
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: all 0.3s; }
+
+body .buttonBack:hover {
+  background-color: #cccccc;
+  cursor: pointer; }
 
 body .dataLoading {
   opacity: 0.9;

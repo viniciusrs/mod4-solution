@@ -1,4 +1,11 @@
-<p> Items component </p>
 <div ng-repeat="item in $ctrl.items.menu_items">
-	<p>{{item.name}}</p>
+	<div class="col-md-4
+				col-sm-6
+				col-xs-12">
+		<div class="menuItemList">
+			<p><span>Name: </span>{{item.name}}</p>
+			<p ng-if="item.description"><span>Description: </span>{{item.description}}</p>
+			<img src="img/food.png">
+		</div>	
+	</div>
 </div>

@@ -1,4 +1,9 @@
-<div> categories component <div>
-<div ng-repeat="item in $ctrl.items">
-	<a ui-sref="menuItems({itemId: item.short_name})">{{item.name}}</a>
+<div class="categoriesList" ui-sref="menuItems({itemId: item.short_name})">
+	<div ng-repeat="item in $ctrl.items">
+		<div class="col-md-4
+					col-sm-6
+					col-xs-12">
+			<p>{{item.name}}  <span class="glyphicon glyphicon-zoom-in"></span></p>
+		</div>
+	</div>
 </div>
