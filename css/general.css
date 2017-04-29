@@ -2,8 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   border: 0px;
-  font-family: 'Quicksand', sans-serif;
-  /* Directive Styles */ }
+  font-family: 'Quicksand', sans-serif; }
 
 body .header h1 {
   font-size: 50px;
@@ -16,31 +15,37 @@ body .header span {
   text-align: center;
   font-size: 50px; }
 
-body .notFound {
-  font-size: 16px;
-  text-align: center;
-  color: red;
-  margin-top: 20px; }
+body .home {
+  position: relative; }
 
-body .search {
-  margin-top: 80px;
+body .home h1 {
+  text-align: center;
+  margin-bottom: 50px; }
+
+body .home .enter {
   text-align: center; }
 
-body .search label {
-  display: block; }
+body .home .enter span {
+  text-align: center;
+  transition: all 0.3s;
+  font-size: 80px; }
+
+body .home .enter span:hover {
+  color: #cccccc; }
 
 body .dataLoading {
   opacity: 0.9;
   width: 300px;
   height: 200px;
   z-index: 1;
-  margin: auto;
-  margin-top: 30px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   background-color: #cccccc;
-  text-align: center;
   border: 1px solid black;
-  border-radius: 20px;
-  position: relative; }
+  border-radius: 20px; }
 
 body .dataLoading img {
   width: 100px;
@@ -53,50 +58,3 @@ body .dataLoading p {
   position: absolute;
   top: 130px;
   left: 100px; }
-
-@media (max-width: 992px) {
-  body .dataLoading {
-    margin-top: -100px; } }
-
-body .listItems {
-  border: 1px solid black;
-  border-radius: 4px;
-  height: 180px;
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 10px;
-  position: relative; }
-
-body .listItems p {
-  padding: 25px 10px 1px 10px;
-  font-weight: bold;
-  font-size: 14px; }
-
-body .listItems p span {
-  font-weight: normal;
-  font-style: italic;
-  font-size: 12px; }
-
-body .listItems .shortName {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 2px 3px 0 3px;
-  font-weight: normal;
-  font-size: 8px;
-  text-align: center; }
-
-body .listItems div {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 80px;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  cursor: pointer;
-  transition: all 0.3s;
-  font-size: 10px;
-  text-align: center; }
-
-body .listItems div:hover {
-  background-color: #cccccc; }
